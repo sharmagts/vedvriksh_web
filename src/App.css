@@ -1,0 +1,104 @@
+/*
+  @font-face {
+    font-family: "Ndot-55";
+    font-weight: 400;
+    font-style: normal;
+    src: url('//cdn.shopify.com/s/files/1/0586/3270/0077/t/6/assets/Ndot-55.otf?v=18522138017450180331657461225');
+}
+@font-face {
+  font-family: "NType82";
+  font-weight: 400;
+  font-style: normal;
+  src: url('//cdn.shopify.com/s/files/1/0586/3270/0077/t/6/assets/NType82-Regular.otf?v=166738954582626444901657461227');
+}
+@font-face {
+  font-family: "NType82Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: url("//cdn.shopify.com/s/files/1/0586/3270/0077/t/6/assets/NType82Mono-Regular.otf?v=95544947759877126221657461236");
+}
+@font-face {
+  font-family: "Raleway Dots";
+  font-weight: 400;
+  font-style: normal;
+  src: url('//fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+} 
+@font-face {
+  font-family: "AtomicClockRadio";
+  font-weight: 400;
+  src: local('AtomicClockRadio.ttf');
+}
+*/
+/* Menu bar */
+.menubar a.menulink {
+  margin: 0.1em 6em;
+  color:#0c0000;
+}
+
+.menubar a.menulink:hover {
+  text-decoration: none;
+  color:#141414;
+  font-weight:600;
+}
+
+.menubar a.menulinkblack {
+  margin: 0.1em 6em;
+  color:#d8d4d4 !important;
+}
+
+.menubar a.menulinkblack:hover {
+  text-decoration: none;
+  color:#faf9f9;
+  font-weight:600;
+}
+
+.company-text {
+  top:150px;
+  left:40px;
+}
+
+.header-text {
+  margin-top: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menubar a.menulink {
+    margin: 0.1em 3em;
+  }
+  .menubar a.menulinkblack {
+    margin: 0.1em 3em;
+  }
+  .company-text {
+    top:70px;
+    left:8%;
+  }
+  .header-text {
+    margin-top: 1.5rem !important;
+  }
+  .section-text {
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .menubar {
+    background-color: #0000001c !important;
+  }
+  .company-text {
+    top:70px;
+    left:18%;
+  }
+  .header-text, .section-text {
+    margin: 1rem !important;
+  }
+  .footer-item {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .company-text {
+    top:38px;
+    left:10%;
+  }
+}

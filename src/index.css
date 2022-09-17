@@ -1,0 +1,68 @@
+:root {
+    --bs-blue: #2D2D73;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #d21414;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #000102;
+    --bs-primary: #002F6C;
+    --bs-secondary: #b7cfff;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #FFC700;
+    --bs-danger: #C8102E;
+    --bs-light: #F4F4F2;
+    --bs-white: #fff;
+    --bs-dark: #000;
+    --bs-font-sans-serif: "NType82Mono", "Noto Sans Mono", "Noto Sans", Rubik, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0));
+}
+
+body {
+    margin: 0;
+    background-color: #f4f4f2;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+}
+@font-face {
+    font-family: "Ndot-55";
+    font-weight: 400;
+    font-style: normal;
+    src: url('../public/fonts/Ndot-55.otf');
+}
+@font-face {
+  font-family: "NType82";
+  font-weight: 400;
+  font-style: normal;
+  src: url('../public/fonts/NType82-Regular.otf');
+}
+@font-face {
+  font-family: "NType82Mono";
+  font-weight: 400;
+  font-style: normal;
+  src: local('../public/fonts/NType82Mono-Regular.otf');
+}
+
+.fs-h1,
+.fs-h2 {
+  font-family: NType82 !important;
+}
+.fs-base {
+  font-family: NType82Mono !important;
+}
+.font-ndot55 {
+  font-family: 'Ndot-55', 'NType82Mono' !important;
+}
+.font-dots {
+  font-family: 'Raleway Dots' !important;
+}
+.font-ndots {
+  font-family: "AtomicClockRadio" !important;
+}
