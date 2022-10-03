@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/vedvriksh_web/static/css/main.4fd7d0c6.css",
-    "main.js": "/vedvriksh_web/static/js/main.1de3242d.js",
+    "main.js": "/vedvriksh_web/static/js/main.a0d1dfe4.js",
     "static/media/NType82-Regular.otf": "/vedvriksh_web/static/media/NType82-Regular.de391967b62c3574ba37.otf",
     "static/media/Ndot-55.otf": "/vedvriksh_web/static/media/Ndot-55.999794e6e4cae13a3577.otf",
     "index.html": "/vedvriksh_web/index.html",
     "main.4fd7d0c6.css.map": "/vedvriksh_web/static/css/main.4fd7d0c6.css.map",
-    "main.1de3242d.js.map": "/vedvriksh_web/static/js/main.1de3242d.js.map"
+    "main.a0d1dfe4.js.map": "/vedvriksh_web/static/js/main.a0d1dfe4.js.map"
   },
   "entrypoints": [
     "static/css/main.4fd7d0c6.css",
-    "static/js/main.1de3242d.js"
+    "static/js/main.a0d1dfe4.js"
   ]
 }
