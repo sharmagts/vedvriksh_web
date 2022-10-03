@@ -1,6 +1,6 @@
 import './App.css';
 import ResponsiveAppBar from './components/responsiveappbar'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { Home } from './components/home'
 import { About } from './components/about'
 import { Contact } from './components/contact'
@@ -11,22 +11,23 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 function App() {
   return (
-    <div className='app'>
+    <>
       {/* <CssBaseline />
       <Menubar />
       <Home /> */}
-      <Router>
-        <CssBaseline />
-        <Menubar />
+      {/*<Router>*/}
+      <CssBaseline />
+      <Menubar />
+      <Router basename="/vedvriksh_web/">
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
-          <Route exact path='about' element={<About/>} />
-          <Route exact path='product' element={<Product/>} />
-          <Route exact path='contact' element={<Contact/>} />
+          <Route exact path='/vedvriksh_web/' element={<Home/>}/>
+          <Route path='/about' element={<About/>} />
+          <Route path='/product' element={<Product/>} />
+          <Route path='/contact' element={<Contact/>} />
         </Routes>
       </Router>
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import DehazeIcon from '@mui/icons-material/Dehaze'
@@ -8,10 +9,8 @@ import CategoryIcon from '@mui/icons-material/Category'
 import ContactsIcon from '@mui/icons-material/Contacts'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
-import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import Link from '@mui/material/Link'
 import { useTheme, createTheme, ThemeProvider } from '@mui/material/styles'
 import { useMediaQuery } from '@mui/material'
 import Drawer from '@mui/material/Drawer'
@@ -23,7 +22,7 @@ const drawerWidth = 240
 const menuData = [
     {
       label: "Home",
-      href: "/",
+      href: "/vedvriksh_web/",
       icon: "HomeIcon"
     },
     {
@@ -85,7 +84,7 @@ export const Menubar = () => {
                 }
             </ListItemIcon>
             <ListItemText>
-                <Link className="font-ndot55" href={menu.href} underline="hover" sx={{color:'#0a0a0bbf'}}>{menu.label}</Link>
+                <Link className="font-ndot55" to={menu.href} underline="hover" style={{color:'#0a0a0bbf'}}>{menu.label}</Link>
             </ListItemText>
           </ListItem>
         ))}
@@ -137,7 +136,7 @@ export const Menubar = () => {
                 }}
             >
                 {menuData.map((menu,index) => (
-                    <Link className={menuLinkClass} key={index} href={menu.href} underline="hover">
+                    <Link className={menuLinkClass} key={index} to={menu.href} underline="hover">
                         {menu.label}
                     </Link>
                 ))}
